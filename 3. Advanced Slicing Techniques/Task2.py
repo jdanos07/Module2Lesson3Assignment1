@@ -1,0 +1,12 @@
+# Task 2: Extract all the temperatures above 100. 
+# HINT: add the temperatures over 100 to a new list, 
+# or use list slicing to get the temperatures.
+
+
+temperatures = [72, 75, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 92,
+                 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106]
+
+hundred = temperatures.index(101)
+hottest_day = len(temperatures)-1
+black_flag_conditions = temperatures[hundred : hottest_day]
+print(black_flag_conditions)
